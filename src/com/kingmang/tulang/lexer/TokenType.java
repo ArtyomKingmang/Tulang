@@ -1,16 +1,17 @@
 package com.kingmang.tulang.lexer;
 
 public enum TokenType {
-    PLUS,
-    MINUS,
-    MUL,
-    DIV,
 
     NUMBER_LITERAL,
     STRING_LITERAL,
 
-    NUMBER,
-    STRING,
+    NUMBER_DATATYPE,
+    STRING_DATATYPE,
+
+    PLUS,
+    MINUS,
+    MUL,
+    DIV,
 
     LPAREN,
     RPAREN,
@@ -21,6 +22,8 @@ public enum TokenType {
 
     LET,
     ID,
+
     PRINT,
+
     EOF
 }
