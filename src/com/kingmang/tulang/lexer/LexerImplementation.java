@@ -106,7 +106,7 @@ public class LexerImplementation implements ILexer {
         }
 
         final String result = sb.toString();
-
+        if (result.equals("println")) return new TokenImplementation(TokenType.PRINTLN, result);
         if (result.equals("let")) return new TokenImplementation(TokenType.LET, result);
         if (result.equals("print")) return new TokenImplementation(TokenType.PRINT, result);
         if (result.equals("number")) return new TokenImplementation(TokenType.NUMBER_DATATYPE, result);

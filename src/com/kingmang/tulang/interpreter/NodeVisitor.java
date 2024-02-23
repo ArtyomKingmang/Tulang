@@ -12,4 +12,6 @@ public interface NodeVisitor {
     void visitNumber(NumberLiteral node);
     void visitString(StringLiteral node);
     void visitPrint(Print node);
+
+    void visitPrintln(Println node);
 }

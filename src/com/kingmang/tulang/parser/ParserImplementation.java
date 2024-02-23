@@ -57,6 +57,8 @@ public class ParserImplementation implements IParser {
             node = declarationStatement();
         } else if (current.getType().equals(PRINT)) {
             node = printStatement();
+        } else if (current.getType().equals(PRINTLN)) {
+            node = printlnStatement();
         } else {
             node = assignmentStatement();
         }
@@ -89,6 +91,19 @@ public class ParserImplementation implements IParser {
         eat(RPAREN);
 
         return new Print(expression);
+    }
+
+    private Node printlnStatement() {
+
+        eat(PRINTLN);
+
+        eat(LPAREN);
+
+        final Node expression = expression();
+
+        eat(RPAREN);
+
+        return new Println(expression);
     }
 
     private Assignation assignmentStatement() {

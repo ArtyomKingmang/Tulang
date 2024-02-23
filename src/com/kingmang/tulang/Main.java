@@ -16,7 +16,8 @@ public class Main {
         final ILexer lexer = new LexerImplementation();
         final IParser parser = new ParserImplementation();
         final IInterpreter interpreter = new InterpreterImplementation();
-        final String code = "print(\"Hello World\");";
+        final String code = "println(\"Hello World\");" +
+                "print(\"Hello World\");";
         final List<IToken> tokens = lexer.tokenize(code);
         final Node node = parser.parse(tokens);
         interpreter.interpret(node);

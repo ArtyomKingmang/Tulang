@@ -24,6 +24,7 @@ public enum TokenType {
     ID,
 
     PRINT,
+    PRINTLN,
 
     EOF
 }

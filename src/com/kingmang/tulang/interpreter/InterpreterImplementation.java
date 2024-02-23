@@ -89,8 +89,18 @@ public class InterpreterImplementation implements IInterpreter, NodeVisitor {
     public void visitPrint(Print node) {
 
         node.getNode().accept(this);
+        System.out.print(stack.pop().getValue());
+    }
+
+    @Override
+    public void visitPrintln(Println node) {
+
+        node.getNode().accept(this);
         System.out.println(stack.pop().getValue());
     }
+
+
+
 
     private void evaluatePlus(BinaryOperation node) {
         node.getLeft().accept(this);
