@@ -12,6 +12,12 @@ programming language from 0
 print("Hello World!")
 ```
 
+Variables in tulang:
+```cpp
+let x : number
+```
+
+
 
 
 
