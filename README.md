@@ -7,10 +7,6 @@ A programming language created for special
 course dedicated to development
 programming language from 0
 
-"Hello World" in tulang:
-```shell
-print("Hello World!")
-```
 
 Fibonacci in tulang:
 ```rust
@@ -26,6 +22,14 @@ println(fibonacci(10))
 ```
 
 
+List example:
+```js
+let testList = list()
 
+list_append(testList, 20)
+list_append(testList, 10)
+
+print(testList) //[20, 10]
+```
 
 
