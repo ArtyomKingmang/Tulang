@@ -1,11 +1,11 @@
 <div align="center">
-  <img src="icon.jpg" width="300">
+  <img src="icon.png" width="300">
 </div>
 
-## Tulang
-A programming language created for special
-course dedicated to development
-programming language from 0
+## More about project
+Compiled programming language for tutorial. 
+
+>Main platform - jvm
 
 
 Fibonacci in tulang:
@@ -31,5 +31,4 @@ list_append(testList, 10)
 
 print(testList) //[20, 10]
 ```
-
 
