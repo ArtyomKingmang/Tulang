@@ -52,20 +52,6 @@ public class Compiler {
         return new Compiler(code.getBytes("UTF-8"), "unnamed");
     }
 
-    public List<String> tokenList() {
-        CharStream cs = CharStreams.fromString(new String(code, StandardCharsets.UTF_8), fileName);
-
-        TulangLexer lexer = new TulangLexer(cs);
-        CommonTokenStream tokens = new CommonTokenStream(lexer);
-
-        tokens.fill();
-
-        return tokens.getTokens()
-                .stream()
-                .map(Token::getText)
-                .collect(Collectors.toList());
-    }
-
     public static class ByteClassLoader extends URLClassLoader {
         private final byte[] classBytes;
 

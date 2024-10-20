@@ -7,8 +7,6 @@ import com.kingmang.tulang.parser.ast.ABinaryOperationNode;
 
 public class LessEqualThanNode extends ABinaryOperationNode {
 
-
-
         public LessEqualThanNode(ANode first, ANode second) {
             super(first, second);
         }

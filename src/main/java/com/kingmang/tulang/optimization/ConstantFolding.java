@@ -97,7 +97,7 @@ public class ConstantFolding extends NodeVisitorAdapter {
         }
 
         if (condition.getNodeType().isAlwaysFalse()) {
-            return new BlockNode(); /* empty block */
+            return new BlockNode();
         }
 
         ANode thenBody = node.getThenBody().accept(this);
